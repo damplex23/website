@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>play.damplex.ro shop</title>
+
+    <style>
+      .grid {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .block {
+        display: block;
+        width: 100%;
+        border: none;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      .grid {
+        font-size: 100px;
+      }
+
+      img {
+        width: 100px;
+        border-radius: 50px;
+        float: left;
+        margin-right: 10px;
+      }
+
+      .username {
+        font-weight: bold;
+      }
+    </style>
+
+    <style>
+      em {
+        color: red;
+        font-style: normal;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grid">more testing 😀</div>
+
+    <script>
+      console.log("you are a sneaky fox");
+    </script>
+
+    <img src="img/test.png" alt="srry i can not render ;(" />
+    <p class="username">@damplex22 &lt;dev&gt; &copy;</p>
+    <p>
+      this is a test if you like you can donate
+      <a href="sec/about.html">about this project</a>
+    </p>
+
+    <div id="donate-button-container">
+      <div id="donate-button"></div>
+      <script
+        src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js"
+        charset="UTF-8"
+      ></script>
+      <script>
+        PayPal.Donation.Button({
+          env: "production",
+          hosted_button_id: "N5RX9433VRLEJ",
+          image: {
+            src: "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif",
+            alt: "Donate with PayPal button",
+            title: "PayPal - The safer, easier way to pay online!",
+          },
+        }).render("#donate-button");
+      </script>
+    </div>
+  </body>
+</html>
